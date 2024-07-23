@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester United News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff0000, #000000);
+        }
+        .header {
+            background-color: #E40000; /* Red color */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            width: 50px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            line-height: 1.2;
+        }
+        .header p {
+            margin-top: 5px;
+            font-size: 18px;
+        }
+        .section-heading {
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            background-color: #E40000; /* Red color */
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .point-table {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #E40000; /* Red color */
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .video-section {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .video-section h2 {
+            margin-top: 0;
+            text-align: center;
+            color: #E40000; /* Red color */
+        }
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .video {
+            flex: 1;
+            max-width: 30%;
+            height: 0;
+            padding-bottom: 40%; /* 4:3 aspect ratio */
+            position: relative;
+        }
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .news-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .news-card h2 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .news-card p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        .news-card a {
+            color: #E40000; /* Red color */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .news-card a:hover {
+            color: #ff6347; /* Lighter red color */
+        }
+        @media (max-width: 768px) {
+            .news-card, .video {
+                width: 100%;
+                max-width: 100%;
+            }
+            .video-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Image/utd_logo.png" alt="Manchester United Logo">
+            <div>
+                <h1>Latest News from Manchester United</h1>
+                <p>Stay Updated with the Red Devils</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-heading">Premier League Table</div>
+    <div class="point-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Team</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Manchester United</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Liverpool</td>
+                    <td>72</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Manchester City</td>
+                    <td>70</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section-heading">Latest Videos</div>
+    <div class="video-section">
+        <div class="video-container">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GJle-0CnPmE?si=9va_pxd3MG32PI7W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/niWs77uRCiY?si=m9kpz5NFAlCAblvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xm7ZciwjqRo?si=J24OZgCz0KnCKqjO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-heading">Latest News</div>
+    <div class="news-container">
+        <div class="news-card">
+            <h2>TRANSFER NEWS</h2>
+            <p>Mason Greenwood is due to have a medical before completing a permanent move from Manchester United to Marseille.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="news-card">
+            <h2>CONFIRMED: OUR AWAY KIT'S RELEASE DATE</h2>
+            <p>Manchester United’s 2024/25 home strip was dropped on 1 July and has already been worn by our men’s team, in the pre-season friendly against Rosenborg. </p>
+            <a href="#">Read More</a>
+        </div>
+
+        <!-- Add more news cards as needed -->
+    </div>
+</body>
+</html>
+
+
